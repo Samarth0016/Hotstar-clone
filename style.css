@@ -1,0 +1,248 @@
+:root{
+    font-size: 16px;
+    font-family: 'Montserrat';
+    background-color: #0f1014;
+    --text-primary-font: #E1E6F0; 
+}
+h1{
+    color: var(--text-primary-font);
+}
+h6{
+    color: var(--text-primary-font);
+    font-size: large;
+    font-kerning: none;
+}
+main{
+    margin-left: 5rem;
+    padding: 1rem; 
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+.navbar:hover{
+    display: block;
+    width: 25rem;
+    z-index: 100;
+    background-image: linear-gradient(to right, #0f1014, rgba(255, 255, 255, 0));
+}
+.navbar:hover .link-text{
+    display: contents;
+}
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0.2rem;
+    
+}
+.navbar-nav:hover{
+    
+    align-items: flex-start;
+}
+a{
+    text-decoration: none;
+}
+.link-text{
+    display: none;
+    color: #E1E6F0;
+    margin-left: 1rem;
+    margin: auto;
+}
+.nav-link svg {
+    width: 1.5rem;
+    min-width: 1.5rem;
+    margin: 0 1.8rem;
+}
+.logo{
+    border: 0, solid;
+    height: auto;
+}
+.logo svg{
+    width: 1rem;
+}
+.nav-link{
+    justify-content: center;
+    text-align: center;
+}
+.nav-item{
+    margin-top: 3rem;
+
+}
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+  
+body::-webkit-scrollbar-track {
+   background: #1e1e24;
+}
+  
+body::-webkit-scrollbar-thumb {
+  background: #4970b8;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.2rem;
+    flex-wrap: wrap;
+}
+.vertical img{
+    width: 12rem;
+    height: 18rem;
+    border-radius: 0.5rem;
+}
+#123{
+   display: contents; 
+}
+.vertical{
+    position: relative;
+}
+.info{
+    padding: .7rem;
+}
+.movie-description{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 0;
+    height: 18rem;
+    background-color: #16181f;
+    width: 20.3rem;
+    flex-wrap: wrap;
+    border-radius: 0.8rem;
+    opacity: 0%;
+    transform: scale(0.4);
+    transition: 0.1s;
+    /* justify-content: center; */
+}
+.ele1 .movie-description{
+    left: 5.8rem;
+}
+.ele2 .movie-description{
+    left: 15rem;
+}
+.ele3 .movie-description{
+    left: 27.5rem;
+}
+.ele4 .movie-description{
+    left: 40rem;
+}
+.ele5 .movie-description{
+    left: 52.5rem;
+}
+.ele6 .movie-description{
+    left: 65rem;
+}
+.ele7 .movie-description{
+    right: 1rem;
+}
+
+
+
+article{
+    font-size: small;
+    color: var(--text-primary-font);
+}
+
+/* card's :horizontal images's adjestment */
+
+.ele1:hover .movie-description{
+    z-index: 10;
+    transform: scale(1);
+    opacity: 100%;
+}
+.ele2:hover .movie-description{
+    z-index: 10;
+    transform: scale(1);
+    opacity: 100%;
+}
+.ele3:hover .movie-description{
+    z-index: 10;
+    transform: scale(1);
+    opacity: 100%;
+}
+.ele4:hover .movie-description{
+    z-index: 10;
+    transform: scale(1);
+    opacity: 100%;
+}
+.ele5:hover .movie-description{
+    z-index: 10;
+    transform: scale(1);
+    opacity: 100%;
+}
+.ele6:hover .movie-description{
+    z-index: 10;
+    transform: scale(1);
+    opacity: 100%;
+}
+.ele7:hover .movie-description{
+    z-index: 10;
+    transform: scale(1);
+    opacity: 100%;
+}
+
+.movie-description img{
+    width: auto;
+    height: 11.4rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+.play button{
+    height: 2rem;
+    width: 16.3rem;
+    border-radius: .4rem;
+}
+.add-list button{
+    height: 2rem;
+    width: 2rem;
+    border-radius: .4rem;
+    size: 5rem;
+}
+.btns{
+    display: flex;
+    gap: .4rem;
+}
+
+/* studios */
+.studios{
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.std img{
+    border-radius: .3rem;
+    position: relative;
+}
+.std video{
+    position: absolute;
+    height: 8rem;
+    width: 14rem;
+    z-index: -1;
+    transform: scale(.5);
+    transition: .5s;
+    border-radius: .2rem;
+    top: 32.4rem;
+}
+.std:hover video{
+    z-index: 2;
+    transform: scale(1);
+}
+
+
+
+
+
+
